@@ -4,21 +4,17 @@
     <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8" >
     
-    <title>Terminal 欢迎页加个符号组成的图形 | Sososo.ren</title>
+    <title>Terminal 欢迎页加个符号组成的图形 | Moomoo / Sososo.ren</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" >
     <meta name="keywords" content="Moomoo, 前端, Web, 胡乱研究, 生活记事" >
     <meta name="description" content="Moomoo.Mm-Hmm.嗯～嗯哼！个人站～" >
-
     
-    <link rel="alternative" href="/atom.xml" title="Sososo.ren" type="application/atom+xml" >
+    <link rel="alternative" href="/atom.xml" title="Moomoo / Sososo.ren" type="application/atom+xml" >
     
     
     <link rel="shortcut icon" href="/img/favicon.ico" >
     
     <link rel="stylesheet" href="/css/style.css">
-    <!--[if lt IE 9]>
-    <script src="/js/html5.js"></script>
-    <![endif]-->
     
   <script>
   var _hmt = _hmt || [];
@@ -34,21 +30,14 @@
 </head>
 
 <body class="home">
-    <!--[if lt IE 9]>
-    <div class="browsehappy">
-        当前网页 <strong>不支持</strong>
-        你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.
-    </div>
-    <![endif]-->
-
     <!-- 博客头部 -->
     <header class="header">
     <section class="container header-main">
         <div class="logo">
-            <a>
+            <a href="/">
                 <div class="cover">
                     <span class="name">Sososo.ren</span>
-                    <span class="description">Mm-hmm.嗯.嗯～干嘛?</span>
+                    <span class="description">嗯，社会主义接班人～</span>
                 </div>
             </a>
         </div>
@@ -60,7 +49,11 @@
             </li>
             
             <li rel="/2017/10/14/Mac-os-terminal/index.html" class="item ">
-                <a href="/comment/" title="Comment" class="icon-comment">&nbsp;Comment</a>
+                <a href="/about/" title="About" class="icon-about">&nbsp;About</a>
+            </li>
+            
+            <li rel="/2017/10/14/Mac-os-terminal/index.html" class="item ">
+                <a href="/comment/" title="Comments" class="icon-comment">&nbsp;Comments</a>
             </li>
             
         </ul>
@@ -86,20 +79,169 @@
                         <b>■</b>
                         微信二维码
                         <span class="popover">
-                            <img src="/img/wechat_mp.jpg" width="120" height="120" alt="我的微信订阅号">
+                            <img src="/img/wechat_mp.jpg" width="120" height="120" alt="我的微信二维码">
                             <i class="arrow"></i>
                         </span>
                     </a>
                 </p>
                 
             </div>
-            <div class="avatar fr">
-                <a href="/about" <img src="/img/moomoo.jpg"><img src="/img/moomoo.jpg"></a>
+            <div class="avatar fr" title="点我让你嗨皮～">
+                <a href='javascript:(function() {
+                    function c() {
+                        var e = document.createElement("link");
+                        e.setAttribute("type", "text/css");
+                        e.setAttribute("rel", "stylesheet");
+                        e.setAttribute("href", f);
+                        e.setAttribute("class", l);
+                        document.body.appendChild(e)
+                    }
+
+                    function h() {
+                        var e = document.getElementsByClassName(l);
+                        for (var t = 0; t < e.length; t++) {
+                            document.body.removeChild(e[t])
+                        }
+                    }
+
+                    function p() {
+                        var e = document.createElement("div");
+                        e.setAttribute("class", a);
+                        document.body.appendChild(e);
+                        setTimeout(function() {
+                            document.body.removeChild(e)
+                        }, 100)
+                    }
+
+                    function d(e) {
+                        return {
+                            height : e.offsetHeight,
+                            width : e.offsetWidth
+                        }
+                    }
+
+                    function v(i) {
+                        var s = d(i);
+                        return s.height > e && s.height < n && s.width > t && s.width < r
+                    }
+
+                    function m(e) {
+                        var t = e;
+                        var n = 0;
+                        while (!!t) {
+                            n += t.offsetTop;
+                            t = t.offsetParent
+                        }
+                        return n
+                    }
+
+                    function g() {
+                        var e = document.documentElement;
+                        if (!!window.innerWidth) {
+                            return window.innerHeight
+                        } else if (e && !isNaN(e.clientHeight)) {
+                            return e.clientHeight
+                        }
+                        return 0
+                    }
+
+                    function y() {
+                        if (window.pageYOffset) {
+                            return window.pageYOffset
+                        }
+                        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+                    }
+
+                    function E(e) {
+                        var t = m(e);
+                        return t >= w && t <= b + w
+                    }
+
+                    function S() {
+                        var e = document.createElement("audio");
+                        e.setAttribute("class", l);
+                        e.src = i;
+                        e.loop = false;
+                        e.addEventListener("canplay", function() {
+                            setTimeout(function() {
+                                x(k)
+                            }, 500);
+                            setTimeout(function() {
+                                N();
+                                p();
+                                for (var e = 0; e < O.length; e++) {
+                                    T(O[e])
+                                }
+                            }, 15500)
+                        }, true);
+                        e.addEventListener("ended", function() {
+                            N();
+                            h()
+                        }, true);
+                        e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+                        document.body.appendChild(e);
+                        e.play()
+                    }
+
+                    function x(e) {
+                        e.className += " " + s + " " + o
+                    }
+
+                    function T(e) {
+                        e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+                    }
+
+                    function N() {
+                        var e = document.getElementsByClassName(s);
+                        var t = new RegExp("\\b" + s + "\\b");
+                        for (var n = 0; n < e.length; ) {
+                            e[n].className = e[n].className.replace(t, "")
+                        }
+                    }
+
+                    var e = 35;
+                    var t = 80;
+                    var n = 750;
+                    var r = 1920;
+                    var i = "http://p39n3dmql.bkt.clouddn.com/harlem-shake.mp3";
+                    var s = "mw-harlem_shake_me";
+                    var o = "im_first";
+                    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+                    var a = "mw-strobe_light";
+                    var f = "http://p39n3dmql.bkt.clouddn.com/hi.css";
+                    var l = "mw_added_css";
+                    var b = g();
+                    var w = y();
+                    var C = document.getElementsByTagName("*");
+                    var k = null;
+                    for (var L = 0; L < C.length; L++) {
+                        var A = C[L];
+                        if (v(A)) {
+                            if (E(A)) {
+                                k = A;
+                                break
+                            }
+                        }
+                    }
+                    if (A === null) {
+                        console.warn("Could not find a node of the right size. Please try a different page.");
+                        return
+                    }
+                    c();
+                    S();
+                    var O = [];
+                    for (var L = 0; L < C.length; L++) {
+                        var A = C[L];
+                        if (v(A)) {
+                            O.push(A)
+                        }
+                    }
+                })()'>
+                <img src="/img/moomoo.jpg"></a>
             </div>
         </div>
     </section>
 </header>
-
 
     <!-- 博客正文 -->
     <div class="container body clearfix">
@@ -119,16 +261,20 @@
         <blockquote>
 <p>PS：原谅我老了，记不住！就记录在这里了～</p>
 </blockquote>
-<p>终端（Terminal） 输入 <code>cd /etc</code> ～回车<br>继续敲 <code>sudo pico motd</code> ～回车<br>网上找一个字符拼成的图案（自行度娘）复制到 终端 里。当然 动手能力强的也可以自己拼一个！</p>
+<p>打开终端（Terminal） 输入 <code>cd /etc</code> ～回车</p>
+<p>继续敲 <code>sudo pico motd</code> ～回车</p>
+<p>网上找一个字符拼成的图案（自行度娘）复制到 终端 里。当然 动手能力强的也可以自己拼一个！</p>
 <a id="more"></a>
 <h4 id="网上找的符号"><a href="#网上找的符号" class="headerlink" title="网上找的符号"></a>网上找的符号</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> ／＼／＼</span><br><span class="line">(_人｜人_)</span><br><span class="line">  ／‥＼</span><br><span class="line">ミ(_Ｙ_)ミ</span><br><span class="line">  ＞ ＜</span><br><span class="line"> (／ ＼)</span><br><span class="line">&lt;_(   )_&gt;</span><br><span class="line">(＿＞―＜＿)   保佑，永无bug!</span><br></pre></td></tr></table></figure>
-<p>按下control＋X 键，再按y保存。<br>按 command＋Q 键退出<br>再次打开终端，看看是不是很洋气呢-.-</p>
+<p>按下control＋X 键，再按y保存。</p>
+<p>按 command＋Q 键退出</p>
+<p>再次打开终端，看看是不是很洋气呢-.-</p>
 <h4 id="最终效果图"><a href="#最终效果图" class="headerlink" title="最终效果图"></a>最终效果图</h4><p><img src="http://p39n3dmql.bkt.clouddn.com/terminal.png" alt=""></p>
 
     </div>
     <p class="post-meta">
         <span class="post-cat">分类：
-            <a class="cat-link" href="/categories/胡求折腾/">胡求折腾</a>
+            <a class="cat-link" href="/categories/胡乱折腾/">胡乱折腾</a>
         </span>
         <span class="post-tags">
             标签：
@@ -189,71 +335,8 @@
 
 <!-- 文章评论 -->
 
-  <script src="/js/comment.js"></script>
-  <div id="comments" class="comment">
-    <!--
-    <div class="sign-bar">
-      GitHub 已登录!
-      <span class="sign-link">登出</span>
-    </div>
-    <section class="box">
-      <div class="com-avatar"><img src="/img/MOOMOO.jpg" alt="avatar"></div>
-      <div class="com-text">
-        <div class="main">
-          <textarea class="text-area-edited show" placeholder="欢迎评论！"></textarea>
-          <div class="text-area-preview"></div>
-        </div>
-        <div class="switch">
-          <div class="switch-item on">编辑</div>
-          <div class="switch-item">预览</div>
-        </div>
-        <div class="button">提交</div>
-      </div>
-    </section>
-    <section class="tips">注：评论支持 markdown 语法！</section>
-    <section class="list-wrap">
-      <ul class="list">
-        <li>
-          <div class="user-avatar">
-            <a href="/">
-              <img src="/img/MOOMOO.jpg" alt="user-avatar">
-            </a>
-          </div>
-          <div class="user-comment">
-            <div class="user-comment-header">
-              <span class="post-name">张德龙</span>
-              <span class="post-time">2017年12月12日</span>
-              <span class="like liked">已赞</span>
-              <span class="like-num">2</span>
-            </div>
-            <div class="user-comment-body">333333</div>
-          </div>
-        </li>
-        <li>
-          <div class="user-avatar">
-            <a href="/">
-              <img src="/img/MOOMOO.jpg" alt="user-avatar">
-            </a>
-          </div>
-          <div class="user-comment">
-            <div class="user-comment-header">
-              <span class="post-name">刘德华</span>
-              <span class="post-time">2017年12月12日</span>
-              <span class="like">点赞</span>
-              <span class="like-num">2</span>
-            </div>
-            <div class="user-comment-body">vvvvv</div>
-          </div>
-        </li>
-      </ul>
-      <div class="page-nav">
-        <a href="javascript: void(0);" class="item">1</a>
-        <a href="javascript: void(0);" class="item">2</a>
-        <a href="javascript: void(0);" class="item current">3</a>
-      </div>
-    </section>
-    -->
-  </div>
+<script src="/js/comment.js"></script>
+  <div id="comments" class="comment"></div>
   <script>
   MOOMOO.Comment({
     container: 'comments',
@@ -275,6 +358,7 @@
         </section>
         <!-- 侧栏部分 -->
 <aside class="sidebar">
+    <!-- 文章分类 -->
     <section class="widget">
         <h3 class="widget-hd"><strong>文章分类</strong></h3>
         <!-- 文章分类 -->
@@ -282,29 +366,29 @@
     
     <li>
         <b>✍ </b>
-        <a href="/categories/胡求折腾/">胡求折腾</a>
+        <a href="/categories/生活琐碎/">生活琐碎</a>
         <span class="badge">(1)</span>
     </li>
     
     <li>
         <b>✍ </b>
-        <a href="/categories/操蛋生活/">操蛋生活</a>
+        <a href="/categories/胡乱折腾/">胡乱折腾</a>
         <span class="badge">(1)</span>
     </li>
     
 </ul>
 
     </section>
-
+    <!-- 热门标签 -->
     
     <section class="widget">
         <h3 class="widget-hd"><strong>热门标签</strong></h3>
         <!-- 文章标签 -->
 <div class="widget-bd tag-wrap">
   
-    <a class="tag-item" href="/tags/Mac-OS/" title="Mac OS">Mac OS (1)</a>
-  
     <a class="tag-item" href="/tags/Yoomiu-Text/" title="Yoomiu Text">Yoomiu Text (1)</a>
+  
+    <a class="tag-item" href="/tags/Mac-OS/" title="Mac OS">Mac OS (1)</a>
   
 </div>
     </section>
@@ -335,7 +419,6 @@
 <!-- / 侧栏部分 -->
 
     </div>
-
     <!-- 博客底部 -->
     <footer class="footer">
     &copy;
@@ -348,8 +431,9 @@
 <div class="back-to-top" id="MOOMOO__backToTop" title="返回顶部">返回顶部</div>
 
     <!--博客js脚本 -->
-    <!-- 这里放网站js脚本 -->
+    <!-- 网站js脚本 -->
 <script src="/js/main.js"></script>
+<!-- 页面点击小红心 -->
+<script src="/js/clicklove.js"></script>
 
 </body>
-</html>
