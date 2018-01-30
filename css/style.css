@@ -1578,8 +1578,8 @@ pre .javascript .function {
 .comment .list-wrap .list .user-comment .user-comment-header .reply {
   color: #ff5e52;
   position: absolute;
-  display: none;
-  left: 0;
+  display: block;
+  right: 0;
   top: 3px;
   font-size: 12px;
   cursor: pointer;
