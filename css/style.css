@@ -481,7 +481,7 @@ a {
 a:link,
 a:visited,
 a:active {
-  color: #666;
+  color: #4b4b4b;
 }
 a:hover {
   color: #ff5e52;
@@ -627,7 +627,7 @@ hr {
   display: block;
   height: 100%;
   color: #fff;
-  background-color: #51cc87;
+  background-color: #000;
   opacity: 0.85;
 }
 .logo a:hover .cover {
@@ -641,19 +641,19 @@ hr {
 }
 .menu .item {
   float: left;
-  padding: 0 20px;
+  padding: 0 12px;
   height: 48px;
   line-height: 48px;
   font-size: 16px;
 }
 .menu .item a {
-  color: #666;
+  color: #4b4b4b;
 }
 .menu .item a:hover {
   color: #ff5e52;
 }
 .menu .current a {
-  color: #ff5e52;
+  color: #51cc87;
 }
 .header .profile {
   position: absolute;
@@ -827,6 +827,7 @@ hr {
   border-bottom: 4px solid transparent;
 }
 .post header .post-title {
+  color: #242424;
   display: inline;
   font-size: 20px;
   font-weight: normal;
@@ -845,7 +846,7 @@ hr {
 }
 .post .post-content {
   position: relative;
-  color: #666;
+  color: #242424;
 }
 .post .post-content img {
   max-width: 100%;
@@ -914,7 +915,7 @@ hr {
   padding: 3px 7px;
   border: none;
   color: #fff;
-  background-color: #51cc87;
+  background-color: #242424;
   opacity: 0.8;
 }
 .post .post-content .more a:hover {
@@ -924,7 +925,7 @@ hr {
   margin: 1em 0;
   padding: 5px 10px;
   color: #666;
-  border-left: 4px solid #eee;
+  border-left: 4px solid #51cc87;
 }
 .post .post-content blockquote p {
   margin: 0;
@@ -1099,8 +1100,8 @@ pre .javascript .function {
  */
 .sidebar {
   float: left;
-  width: 330px;
-  margin-left: -350px;
+  width: 300px;
+  margin-left: -330px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1147,6 +1148,7 @@ pre .javascript .function {
   line-height: 1;
   border-bottom: 0px solid #eee;
   font-size: 13px;
+  color: #242424;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1186,12 +1188,11 @@ pre .javascript .function {
 }
 .widget .widget-bd .tag-item {
   float: left;
-  width: 32.6666%;
-  margin: 0 1% 1% 0;
+  margin: 0 3% 1% 0;
   padding: 0 8px;
-  line-height: 29px;
+  line-height: 25px;
   font-size: 12px;
-  color: #999;
+  color: #242424;
   background-color: #f6f6f6;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
